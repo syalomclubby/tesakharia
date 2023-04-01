@@ -338,12 +338,13 @@
     text-align: center;
     /* left: 0.5%;
     top: 42.2%; */
+    margin-top: 320px;
+    margin-left: 63px;
     width: 50px;
     height: 50px;
     display: block;
     position: absolute;
     padding-top: 15px;
-    margin-left: 55px;
     border-radius: 50%; 
     transform: rotate(180deg);
     z-index: 1;
@@ -356,14 +357,15 @@
 .btn-banner2 {
     background: #f8f8f8;
     text-align: center;
-    left: -1%;
-    top: 42.2%;
+    /* left: -1%;
+    top: 42.2%; */
+    margin-top: 320px;
+    margin-left: 1493px;
     width: 50px;
     height: 50px;
     display: block;
     position: absolute;
     padding-top: 15px;
-    margin-left: 1510px;
     border-radius: 50%;
     z-index: 1;
     transition: 0.5s;

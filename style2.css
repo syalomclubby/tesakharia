@@ -390,7 +390,11 @@ body.dark-mode .dropdown-content {
     transition: 0.8s;
 }
 
-body.dark-mode .dropdown-content a,p {
+body.dark-mode .dropdown-content a {
+    color: white;
+}
+
+body.dark-mode .dropdown-content p {
     color: white;
 }
 

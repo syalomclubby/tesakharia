@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#CD985B" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.postimg.cc/QNc5mQps/Group-1.png" type="image" sizes="16x16">
+    <link rel="stylesheet" href="stylesrc.css">
+    <title>Search - </title>
+</head>
+<body>
+    <div class="header">
+        <div class="logoo">
+            <div class="dropdown">
+                <div class="dropbtn" onclick="myFunction()"></div>
+            </div>
+            <a href="index.html"><img class="logo" src="https://i.postimg.cc/nLwMVzB3/Group-3.png" alt="" width="13%" height="13%"></a>
+        </div>
+        
+        <div class="search">
+            <div class="searchicon">
+                <img src="Vector.png" width="90%">
+            </div>
+            <div class="srcinput">
+                <input type="text" placeholder="Cari di Akharia" class="input">
+            </div>
+        </div>
+        <div class="toggle">
+            <a href="cart.html"><div class="keranjang">
+                <img src="Vector2.png" width="90%" height="60%">
+            </div></a>
+            <div class="mode">
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            <div class="garis">
+                <img src="rectangle.png" width="120%" height="35">
+            </div>
+            <div class="logoprofil">
+                <img src="logoprofil.png">
+                <div class="biomenu">
+                    <div class="bg"><div class="little"></div></div>
+                    <div class="title-bio">
+                        <div><a href="#">Profil</a></div>
+                        <div><a href="favorit.html">Barang Favorit</a></div>
+                        <div><a href="#">Histori Pencarian</a></div>
+                        <div><a href="index.html">Keluar Akun</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="nav" class="dropdown-content">
+        <p>BERANDA</p>
+        <a href="#">Brand Terpilih</a>
+        <a href="#">Keluaran Terbaru</a>
+        <p>EVENT</p>
+        <a href="#">Erigo x Akharia</a>
+        <a href="#">Erigo x Akharia</a>
+        <a href="#">Erigo x Akharia</a>
+    </div>
+    <div class="header-src"></div>
+    <div class="newsrc">
+        <div class="big-search">
+            <div class="searchicon">
+                <img src="Vector.png" width="400%">
+            </div>
+            <div class="srcinput">
+                <input type="text" placeholder="Ketik sesuatu..." class="input">
+            </div>
+            <div class="close">
+                <img src="btn-delete.png" width="75%">
+            </div>
+        </div>
+        <div class="filter-box">
+            <input type="text" class="textBox" placeholder="Search by Filter..." readonly>
+            <!-- <img onclick="myFilter()" src="filter.png" width="7.5%" height="23%"> -->
+            <div class="dropdown-filter">
+                <div class="ttl-filter" onclick="show('Bestselling');changeTitleColor('#CD985B');changeTitleColor2('#181818');changeTitleColor3('#181818');changeTitleColor4('#181818');changeTitleColor5('#181818');">Bestselling</div>
+                <div class="ttl-filter2" onclick="show('Paling Disukai');changeTitleColor2('#CD985B');changeTitleColor('#181818');changeTitleColor3('#181818');changeTitleColor4('#181818');changeTitleColor5('#181818');">Paling Disukai</div>
+                <div class="ttl-filter3" onclick="show('Keluaran Terbaru');changeTitleColor3('#CD985B');changeTitleColor('#181818');changeTitleColor2('#181818');changeTitleColor4('#181818');changeTitleColor5('#181818');">Keluaran Terbaru</div>
+                <div class="ttl-filter4" onclick="show('Harga Dari Termahal');changeTitleColor4('#CD985B');changeTitleColor('#181818');changeTitleColor2('#181818');changeTitleColor3('#181818');changeTitleColor5('#181818');">Harga Dari Termahal</div>
+                <div class="ttl-filter5" onclick="show('Harga Dari Termurah');changeTitleColor5('#CD985B');changeTitleColor('#181818');changeTitleColor2('#181818');changeTitleColor3('#181818');changeTitleColor4('#181818');">Harga Dari Termurah</div>
+            </div>
+        </div>
+    </div>
+<div class="reveal">
+    <div class="brand-terpilih">
+        <div class="produk1">
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="shop.html"><img src="produk1.png"></a>
+                <div class="sml-title">Item Name For a Dumy Example</div>
+                <div class="prc-title"><b>Rp 100.000</b></div>
+                <div class="btn-beli-star">
+                    <button class="btn-beli" type="button">Beli Sekarang</button>
+                    <div class="btn-star"><center><img src="star.png" width="53%" height="53%"><center></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="login-overlay"></div>
+    <div class="popup">
+        <div onclick="closeLoginForm()" class="popup-close">&times;</div>
+        <div class="form">
+            <div class="login-header">
+                Masuk ke akunmu
+            </div>
+            <div class="login-sub">
+                Selamat datang! Silahkan memasukkan data untuk masuk ke akun anda.
+            </div>
+            <div class="element">
+                <label for="username"></label>
+                <input placeholder="Nama" type="text" id="username">
+            </div>
+            <div class="element">
+                <label for="password"></label>
+                <input placeholder="Kata sandi" type="text" id="password">
+            </div>
+            <div class="element-btn">
+                <a href="index2.html">
+                <button>Masuk</button>
+                </a>
+            </div>
+            <div class="no-account">
+                Tidak ada akun? &nbsp;<div class="clck-acnt">Buat sebuah akun</div>
+            </div>
+        </div>
+    </div>
+    <div class="signup-overlay"></div>
+    <div class="popup2">
+        <div onclick="closeSignUpForm()" class="popup2-close">&times;</div>
+        <div class="form">
+            <div class="login-header">
+                Daftar sebuah akun
+            </div>
+            <div class="login-sub">
+                Selamat datang! Silahkan memasukkan data untuk masuk ke akun anda.
+            </div>
+            <div class="element">
+                <label for="username"></label>
+                <input placeholder="Nama" type="text" id="username">
+            </div>
+            <div class="element">
+                <label for="password"></label>
+                <input placeholder="Kata sandi" type="text" id="password">
+            </div>
+            <div class="element-btn">
+                <button>Daftar</button>
+            </div>
+            <div class="no-account">
+                Ada sebuah akun? &nbsp;<div class="clck-acnt">Masuk ke akunmu</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    Copyright © 2023 Akharia. &nbsp;All rights reserved.
+</div>
+    <script src="script.js"></script>
+    <script src="imageslider.js"></script>
+    <script src="dropbtn.js"></script>
+    <script src="filter.js"></script>
+    <script src="dropdown-rotate.js"></script>
+</body>
+</html>

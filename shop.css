@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 17px;
+    margin: auto;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 4;
+    position: fixed;
+}
+
+.toggle .logoprofil.activatee .biomenu {
+    display: block;
+}
+
+.logoprofil {
+    z-index: 100000;
+}
+
+.biomenu {
+    position: fixed;
+    z-index: 1;
+    top: 55%;
+    left: 78.9%;
+    display: none;
+}
+
+@keyframes biomenu {
+    0% {
+        height: 10px;
+    }
+    100% {
+        height: 197.5px;
+    }
+}
+
+@keyframes biotext {
+    0% {
+        margin-bottom: -20px;
+        opacity: 0;
+    }
+    100% {
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+}
+
+.biomenu .bg {
+    background: #fff;
+    position: fixed;
+    width: 207.5px;
+    height: 197.5px;
+    left: 85.5%;
+    top: 15.2%;
+    box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    animation: biomenu 0.5s;
+}
+
+.biomenu .bg .little {
+    position: fixed;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 60px solid #fff;
+    border-radius: 100px;
+    transform: rotate(122deg);
+    left: 95.3%;
+    top: 14.1%;
+    z-index: 1;
+    /* box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2); */
+    border-radius: 5px;
+}
+
+.biomenu .title-bio {
+    margin-top: -280px;
+    margin-left: 140px;
+}
+
+.biomenu .title-bio div {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #181818;
+    opacity: 0.8;
+    animation: biotext 0.5s;
+}
+
+.biomenu .title-bio div a:hover {
+    color: #CD985B;
+}
+
+.biomenu .title-bio div a {
+    text-decoration: none;
+    color: #181818;
+}
+
+.header .search {
+    border-width: 2.3px;
+    border-style: solid;
+    border-color: #18181835;
+    width: 59.31%;
+    height: 50px;
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 1px 15px 5px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    animation: menuKeluar2 0.7s;
+}
+@keyframes menuKeluar2 {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.header .search .searchicon {
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+.header .srcinput input{
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    padding-right: 500px;
+    font-size: 18px;
+}
+
+.logo{
+    width: 100px;
+    float: left;
+    margin-left: 0px 0px 0px 30px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    z-index: 1;
+    animation: KeluarSamping 0.9s;
+}
+
+.panah {
+    width: 10px;
+    height: 20px;
+    display: flex;
+    z-index: 1;
+    transform: rotate(90deg);
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-top: 9px;
+    margin-right: 35px;
+    margin-left: 30px;
+  }
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFEAD1;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #CD985B;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #DCDCDC;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #DCDCDC;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.slider.round:before {
+    border-radius: 50%;
+  }
+
+.slider.round {
+    border-radius: 34px;
+  }
+
+.header .garis {
+    margin-top: 7px;
+    margin-right: 10px;
+    margin-bottom: -10px;
+}
+
+.header .keranjang {
+    margin-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.logoprofil {
+    margin-right: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    border-left: 9.5px solid transparent;
+    border-right: 9.5px solid transparent;
+    border-top: 9.5px solid #CD985b;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transform: rotate(-90deg);
+    transition: 0.25s;
+}
+
+.dropdown.activate .dropbtn{
+    transform: rotate(0deg);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+}
+
+.dropdown-content {
+    margin-top: 5px;
+    display: none;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    padding-top: 100px;
+    background-color: #FFFFFF;
+    position: fixed;
+    box-shadow: 1px 1px 15px -3px rgba(0,0,0,0.5);
+    transition: 0.65s;
+    animation: menuKeluar 0.65s;
+}
+
+@keyframes menuKeluar {
+    0% {
+        transform: translateY(-50%);
+        height: 60%;
+    }
+ 
+    100% {
+        transform: translateY(0%);
+        height: 100%;
+    }
+ }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    padding-left: 60px;
+    transition: 0.8s;
+}
+
+.dropdown-content p {
+    padding: 43px 50px 1px 21px;
+    padding-left: 43px;
+    font-size: 11px;
+}
+
+.dropdown-content a:hover {
+    background-color: #CD985b;
+    color: #FFFFFF;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.dropdown-content:hover {
+    display: block;
+}
+
+.logoo{
+    display: flex;
+    transition: 0.65s;
+    animation: KeluarSamping 0.65s;
+}
+
+@keyframes KeluarSamping {
+    0% {
+        transform: translateX(-13%);
+        opacity: 0.4;
+    }
+ 
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+ }
+ @keyframes KeluarSamping2 {
+    0% {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+ 
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+ }
+ @keyframes KeluarSamping3 {
+    0% {
+        transform: scale(85%);
+        opacity: 0;
+    }
+ 
+    100% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+ }
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    padding-top: 135px;
+    padding-left: 400px;
+}
+
+.shop .item img {
+    width: 70%;
+    animation: KeluarSamping2 0.7s;
+}
+
+.shop .item .banner {
+    height: 90px;
+    width: 420px;
+    border-radius: 10px;
+    background: #DCDCDC;
+    margin-top: 20px;
+    animation: KeluarSamping2 1.6s;
+}
+
+.shop .item-info {
+    margin-left: -130px;
+    animation: KeluarSamping3 1.2s;
+}
+
+.shop .item-info h2 {
+    font-size: 30px;
+    padding-right: 320px;
+}
+
+.shop .item-info .sub {
+    display: flex;
+    flex-direction: row;
+    color: #747474;
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.terjual {
+    color: #747474;
+    opacity: 60%;
+}
+
+.shop .item-info .price {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.shop .card {
+    margin-top: 30px;
+    border-style: solid;
+    border-color: #74747492;
+    border-width: 3.5px;
+    border-radius: 10px;
+    width: 450px;
+    height: 340px;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+.shop .card h2 {
+    margin-right: -300px;
+    padding-top: 7px;
+}
+
+.shop .card .number {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    height: 42px;
+    width: 130px;
+    border-style: solid;
+    border-radius: 6px;
+    border-width: 2.4px;
+    border-color: #74747492;
+}
+
+.shop .card .number .negatif {
+    margin-right: -32px;
+    margin-top: 5px;
+    margin-left: 13px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.shop .card .number .plus {
+    padding: 0px 10px 10px 9.1px;
+    margin-left: -180px;
+    font-size: 23px;
+    color: #CD985B;
+    font-weight: 700;
+    margin-top: 2.5px;
+    margin-right: 4px;
+    width: 32px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #FFEAD1;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.shop .card .number .plus:hover {
+    color: #FFEAD1;
+    background-color: #CD985B;
+}
+
+.shop .card .number .negatif:hover {
+    opacity: .6;
+}
+
+.shop .card .number input {
+    padding: 3px 0px 3px 57px;
+    font-size: 20px;
+    border-style: none;
+    outline: none;
+    background-color: #ffffff00;
+}
+
+.shop .card .terjual {
+    display: flex;
+    opacity: 100%;
+    color: #74747492;
+    justify-content: space-between;
+    margin: 20px 20px 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shop .card .terjual .harga {
+    color: #000000;
+}
+
+.shop .card .btn-1 {
+    margin-right: 15px;
+    border-style: none;
+    background-color: #CD985B;
+    color: #FFEAD1;
+    font-size: 20px;
+    font-weight: 600;
+    width: 192px;
+    height: 60px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.shop .card .btn-1:hover {
+    margin-right: 15px;
+    border-style: none;
+    background-color: #FFEAD1;
+    color: #CD985B;
+    font-size: 20px;
+    font-weight: 600;
+    width: 192px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.shop .card .btn-2 {
+    border-style: none;
+    background-color: #FFEAD1;
+    color: #CD985B;
+    font-size: 20px;
+    font-weight: 600;
+    width: 192px;
+    height: 60px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.shop .card .btn-2:hover {
+    border-style: none;
+    background-color: #CD985B;
+    color: #FFEAD1;
+    font-size: 20px;
+    font-weight: 600;
+    width: 192px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.shop .card .btn-3 {
+    margin-top: 15px;
+    border-style: solid;
+    background: none;
+    border-color: #CD985B;
+    border-width: 3px;
+    color: #CD985B;
+    font-size: 20px;
+    font-weight: 600;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.shop .card .btn-3:hover {
+    margin-top: 15px;
+    border-style: none;
+    background-color: #CD985B;
+    border-width: 3px;
+    color: #FFEAD1;
+    font-size: 20px;
+    font-weight: 600;
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #CD985b;
+    text-align: center;
+    padding: 16px 0;
+    color: #FFF;
+    margin-top: 43px;
+}

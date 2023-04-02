@@ -317,16 +317,16 @@ body .header .logo {
         transform: translateX(0%);
     }
     20% {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
     30% {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
     40% {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
     50% {
-        transform: translateX(-50%);
+        transform: translateX(-30%);
     }
     60% {
         transform: translateX(0%);

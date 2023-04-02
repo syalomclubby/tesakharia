@@ -283,26 +283,30 @@ body .header .logo {
  }
 
  .banner {
+    margin: 0 auto;
+    margin-top: 120px;
     position: relative;
     width: 90%;
-    margin: 0 auto;
-    margin-top: 115px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 1;
     cursor: pointer;
 }
 .banner .slideshow-container {
-    width: 142.75%;
+    display: flex;
+    width: 200%;
+    height: 100%;
+    animation: slide 10s ease infinite;
+    /* width: 142.75%;
     display: flex;
     animation: slide 15s infinite;
-    animation-delay: 1.5s;
+    animation-delay: 1.5s; */
 }
 
 .banner img {
-    object-fit: cover;
     width: 50%;
     height: 100%;
+    object-fit: cover;
 }
 
 @keyframes slide {

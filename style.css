@@ -400,7 +400,8 @@ body .header .logo {
     margin-right: -15px;
     width: 290px;
     height: 415px;
-    box-shadow: 0px 170px 68px rgba(0, 0, 0, 0.01), 0px 96px 57px rgba(0, 0, 0, 0.05), 0px 43px 43px rgba(0, 0, 0, 0.09), 0px 11px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    /* box-shadow: 0px 170px 68px rgba(0, 0, 0, 0.01), 0px 96px 57px rgba(0, 0, 0, 0.05), 0px 43px 43px rgba(0, 0, 0, 0.09), 0px 11px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1); */
 }
 .card img {
     border-top-left-radius: 15px;

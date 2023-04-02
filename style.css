@@ -11,6 +11,7 @@
 } */
 
 .bg-loader {
+    top: 0;
     height: 100vh;
     width: 100%;
     background: #FFEAD1;
@@ -62,7 +63,7 @@
     box-sizing: border-box;
     justify-content: space-between;
     padding: 14px 17px 17px 17px;
-    margin: auto;
+    top: 0;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
     background-color: white;
     font-size: 30px;
@@ -213,6 +214,7 @@ body .header .logo {
     width: 195px;
     position: fixed;
     z-index: 2;
+    top: 0;
     left: 0;
     padding-top: 70px;
     background-color: #FFFFFF;
@@ -281,10 +283,10 @@ body .header .logo {
  }
 
  .banner {
-    position: absolute;
-    width: 1085px;
-    top: 20%;
-    left: 5.5%;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 115px;
     overflow: hidden;
     border-radius: 20px;
     z-index: 1;
@@ -295,6 +297,12 @@ body .header .logo {
     display: flex;
     animation: slide 15s infinite;
     animation-delay: 1.5s;
+}
+
+.banner img {
+    object-fit: cover;
+    width: 50%;
+    height: 100%;
 }
 
 @keyframes slide {
@@ -340,10 +348,8 @@ body .header .logo {
 .btn-banner {
     background: #f8f8f8;
     text-align: center;
-    /* left: 0.5%;
-    top: 42.2%; */
-    margin-top: 250px;
-    margin-left: 48px;
+    left: 3.5%;
+    top: 43%;
     width: 36px;
     height: 36px;
     display: block;
@@ -352,6 +358,7 @@ body .header .logo {
     padding-left: 1px;
     border-radius: 50%; 
     transform: rotate(180deg);
+    object-fit: cover;
     z-index: 1;
     transition: 0.5s;
     cursor: pointer;
@@ -362,10 +369,8 @@ body .header .logo {
 .btn-banner2 {
     background: #f8f8f8;
     text-align: center;
-    /* left: -1%;
-    top: 42.2%; */
-    margin-top: 250px;
-    margin-left: 1133px;
+    right: 3.5%;
+    top: 43%;
     width: 36px;
     height: 36px;
     display: block;
@@ -383,7 +388,7 @@ body .header .logo {
 
 .brand-terpilih {
     margin-left: -30px;
-    padding-top: 420px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 

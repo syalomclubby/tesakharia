@@ -66,13 +66,14 @@ body.dark-mode .header {
 
 .logoprofil {
     z-index: 100000;
+    position: relative;
 }
 
 .biomenu {
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 15.5%;
-    left: 86.5%;
+    top: 76px;
+    left: -106px;
     display: none;
 }
 

@@ -10,6 +10,11 @@
     width: 0;
 } */
 
+
+body .bingkai {
+    max-width: 1190px;
+}
+
 .bg-loader {
     top: 0;
     height: 100vh;

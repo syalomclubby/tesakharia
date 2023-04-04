@@ -12,6 +12,8 @@ body {
 
 body .bingkai {
     max-width: 1190px;
+    position: relative;
+    margin: 0 auto;
 }
 
 body.dark-mode::-webkit-scrollbar {
@@ -505,16 +507,18 @@ body.dark-mode .dropdown-content p {
 .btn-banner {
     background: #f8f8f8;
     text-align: center;
-    margin-top: 320px;
-    margin-left: 63px;
-    width: 50px;
-    height: 50px;
+    left: 41px;
+    top: 130px;
+    width: 36px;
+    height: 36px;
     display: block;
     position: absolute;
-    padding-top: 15px;
+    padding-top: 9px;
+    padding-left: 1px;
     border-radius: 50%; 
     transform: rotate(180deg);
-    z-index: 2;
+    object-fit: cover;
+    z-index: 1;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -531,15 +535,16 @@ body.dark-mode .btn-banner:hover {
 .btn-banner2 {
     background: #f8f8f8;
     text-align: center;
-    margin-top: 320px;
-    margin-left: 1493px;
-    width: 50px;
-    height: 50px;
+    right: 41px;
+    top: 130px;
+    width: 36px;
+    height: 36px;
     display: block;
     position: absolute;
-    padding-top: 15px;
+    padding-top: 9px;
+    padding-left: 1px;
     border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -554,20 +559,20 @@ body.dark-mode .btn-banner2:hover {
 }
 
 .brand-terpilih {
-    padding-top: 570px;
+    margin-left: -30px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
 .card {
+    transform: scale(74%);
     border-radius: 15px;
     margin: 10px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin-left: -12px;
+    margin-right: -15px;
     width: 290px;
     height: 415px;
-    background-color: #FFFFFF;
-    transition: 0.5s;
-    box-shadow: 0px 170px 68px rgba(0, 0, 0, 0.01), 0px 96px 57px rgba(0, 0, 0, 0.05), 0px 43px 43px rgba(0, 0, 0, 0.09), 0px 11px 23px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 body.dark-mode .card {
@@ -580,8 +585,9 @@ body.dark-mode .card {
 }
 
 .produk1 {
-    margin-right: 95px;
-    margin-left: 95px;
+    margin-right: 81.7px;
+    margin-left: 100px;
+    margin-top: -50px;
     padding-bottom: 130px;
     align-items: center;
     display: flex;
@@ -594,19 +600,21 @@ body.dark-mode .card {
 }
 
 .brand-keluaran {
-    margin-top: -190px;
+    margin-left: -30px;
+    margin-top: -250px;
 }
 .produk2 {
-    margin-right: 95px;
-    margin-left: 95px;
-    padding-bottom: 120px;
+    margin-right: 81.7px;
+    margin-left: 100px;
+    margin-top: -50px;
+    padding-bottom: 20px;
     align-items: center;
     display: flex;
     flex-direction: row;
     overflow: auto;
     scroll-behavior: smooth;
 }
-.produk2::-webkit-scrollbar {
+.reveal .produk2::-webkit-scrollbar {
     width: 0;
 }
 
@@ -618,7 +626,7 @@ body.dark-mode .card {
 
 .sml-link {
     margin-left: 25px;
-    font-size: 24px;
+    font-size: 18px;
     margin-top: 50px;
     color: #CD985b;
     cursor: pointer;
@@ -626,7 +634,7 @@ body.dark-mode .card {
 
 .title-card1 {
     margin-left: 126px;
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 600;
     margin-top: 40px;
     transition: 0.7s;
@@ -641,13 +649,13 @@ body.dark-mode .title-card1 {
     margin-bottom: 20px;
     color: #FFEAD1;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     background-color: #CD985b;
     border: 2px solid #CD985b;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px 15px 5px 15px;
-    height: 46px;
-    width: 100px;
+    height: 35px;
+    width: 75px;
     cursor: pointer;
     transition-duration: 0.4s; 
 }
@@ -663,13 +671,13 @@ body.dark-mode .title-card1 {
     margin-bottom: 20px;
     color: #CD985b;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     background: none;
-    border: 2px solid #CD985b;
-    border-radius: 10px;
+    border: 1.7px solid #CD985b;
+    border-radius: 8px;
     padding: 5px 15px 5px 15px;
-    height: 46px;
-    width: 270px;
+    height: 35px;
+    width: 210px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
@@ -685,13 +693,13 @@ body.dark-mode .title-card1 {
     margin-bottom: 20px;
     color: #CD985b;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 13px;
     background: none;
-    border: 2px solid #CD985b;
-    border-radius: 10px;
+    border: 1.7px solid #CD985b;
+    border-radius: 8px;
     padding: 5px 15px 5px 15px;
-    height: 46px;
-    width: 270px;
+    height: 35px;
+    width: 210px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
@@ -784,10 +792,10 @@ body.dark-mode .card .prc-title {
     width: 100%;
     background-color: #CD985b;
     text-align: center;
-    padding: 16px 0;
+    padding: 11.7px 0;
     color: #FFF;
-    margin-top: -50px;
-    transition: 0.4s;
+    font-size: 12px;
+    transition: 0.5s;
 }
 
 body.dark-mode .footer {

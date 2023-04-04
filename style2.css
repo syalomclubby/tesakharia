@@ -10,6 +10,10 @@ body {
     transition: 0.5s;
 }
 
+body .bingkai {
+    max-width: 1190px;
+}
+
 body.dark-mode::-webkit-scrollbar {
     width: 17px;
     background-color: #393939;

@@ -11,8 +11,10 @@
 } */
 
 
-body .bingkai {
+.bingkai {
     max-width: 1190px;
+    position: relative;
+    margin: 0 auto;
 }
 
 .bg-loader {
@@ -353,8 +355,8 @@ body .header .logo {
 .btn-banner {
     background: #f8f8f8;
     text-align: center;
-    left: 3.5%;
-    top: 43%;
+    left: 41px;
+    top: 130px;
     width: 36px;
     height: 36px;
     display: block;
@@ -374,8 +376,8 @@ body .header .logo {
 .btn-banner2 {
     background: #f8f8f8;
     text-align: center;
-    right: 3.5%;
-    top: 43%;
+    right: 41px;
+    top: 130px;
     width: 36px;
     height: 36px;
     display: block;

@@ -71,8 +71,8 @@ body.dark-mode .header {
 .biomenu {
     position: fixed;
     z-index: 1;
-    top: 68%;
-    left: 76.5%;
+    top: 15.5%;
+    left: 86.5%;
     display: none;
 }
 
@@ -98,15 +98,13 @@ body.dark-mode .header {
 
 .biomenu .bg {
     background: #fff;
-    position: fixed;
     width: 148.21px;
     height: 141.1px;
-    left: 86.5%;
-    top: 15.2%;
     box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     animation: biomenu 0.5s;
     transition: 0.5s;
+    position: absolute;
 }
 
 body.dark-mode .biomenu .bg {
@@ -115,7 +113,6 @@ body.dark-mode .biomenu .bg {
 }
 
 .biomenu .bg .little {
-    position: fixed;
     width: 0;
     height: 0;
     border-left: 13px solid transparent;
@@ -123,8 +120,9 @@ body.dark-mode .biomenu .bg {
     border-bottom: 30px solid #fff;
     border-radius: 100px;
     transform: rotate(122deg);
-    left: 96.2%;
-    top: 13.7%;
+    position: absolute;
+    left: 80%;
+    top: -4.9%;
     z-index: 1;
     /* box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
@@ -136,8 +134,7 @@ body.dark-mode .biomenu .bg .little {
 }
 
 .biomenu .title-bio {
-    margin-top: -280px;
-    margin-left: 140px;
+    padding: 15px 15px 15px 20px;
 }
 
 .biomenu .title-bio div {

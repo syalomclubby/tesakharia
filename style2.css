@@ -11,18 +11,18 @@ body {
 }
 
 body.dark-mode::-webkit-scrollbar {
-    width: 30px;
+    width: 17px;
     background-color: #393939;
 }
 
 body.dark-mode::-webkit-scrollbar-track {
-    border: solid 3px transparent;
+    border: solid 0.2px transparent;
 }
 
 body.dark-mode::-webkit-scrollbar-thumb {
     border-radius: 13px;
     box-shadow: inset 0 0 10px 10px #CD985B;
-    border: solid 8px transparent;
+    border: solid 5px transparent;
   }
 
 body.dark-mode::-webkit-scrollbar-button:single-button {
@@ -41,12 +41,13 @@ body.dark-mode {
 .header {
     box-sizing: border-box;
     justify-content: space-between;
-    padding: 17px;
-    margin: auto;
+    padding: 14px 17px 17px 17px;
+    top: 0;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
     background-color: white;
     font-size: 30px;
     width: 100%;
+    height: 65px;
     display: flex;
     flex-wrap: wrap;
     z-index: 4;
@@ -70,8 +71,8 @@ body.dark-mode .header {
 .biomenu {
     position: fixed;
     z-index: 1;
-    top: 55%;
-    left: 78.9%;
+    top: 68%;
+    left: 76.5%;
     display: none;
 }
 
@@ -80,17 +81,17 @@ body.dark-mode .header {
         height: 10px;
     }
     100% {
-        height: 197.5px;
+        height: 141.1px;
     }
 }
 
 @keyframes biotext {
     0% {
-        margin-bottom: -20px;
+        margin-bottom: -15px;
         opacity: 0;
     }
     100% {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
         opacity: 0.8;
     }
 }
@@ -98,9 +99,9 @@ body.dark-mode .header {
 .biomenu .bg {
     background: #fff;
     position: fixed;
-    width: 207.5px;
-    height: 197.5px;
-    left: 85.5%;
+    width: 148.21px;
+    height: 141.1px;
+    left: 86.5%;
     top: 15.2%;
     box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -117,13 +118,13 @@ body.dark-mode .biomenu .bg {
     position: fixed;
     width: 0;
     height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 60px solid #fff;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 30px solid #fff;
     border-radius: 100px;
     transform: rotate(122deg);
-    left: 95.3%;
-    top: 14.1%;
+    left: 96.2%;
+    top: 13.7%;
     z-index: 1;
     /* box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2); */
     border-radius: 5px;
@@ -140,8 +141,8 @@ body.dark-mode .biomenu .bg .little {
 }
 
 .biomenu .title-bio div {
-    margin-bottom: 20px;
-    font-size: 18px;
+    margin-bottom: 15px;
+    font-size: 14px;
     color: #181818;
     opacity: 0.8;
     animation: biotext 0.5s;
@@ -172,12 +173,13 @@ body.dark-mode .biomenu .title-bio div a:hover {
 }
 
 .switch {
+    transform: scale(78%);
     position: relative;
     display: inline-block;
-    width: 60px;
+    width: 62px;
     height: 34px;
-    margin-top: 9px;
-    margin-right: 35px;
+    margin-top: 2px;
+    margin-right: 22px;
     margin-left: 30px;
   }
 
@@ -205,8 +207,8 @@ body.dark-mode .biomenu .title-bio div a:hover {
     content: "";
     height: 26px;
     width: 26px;
-    left: 4px;
-    bottom: 4px;
+    left: 4.9px;
+    bottom: 4.5px;
     background-color: #5c5c5c;
     -webkit-transition: .4s;
     transition: .4s;
@@ -236,40 +238,40 @@ body.dark-mode .biomenu .title-bio div a:hover {
   }
 
 .header .garis {
-    margin-top: 7px;
-    margin-right: 10px;
+    margin-top: 3px;
+    margin-right: 4px;
     margin-bottom: -10px;
 }
 
 .header .keranjang {
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 1px;
+    margin-right: -12px;
     cursor: pointer;
 }
 
 .logoprofil {
-    margin-right: 20px;
+    margin-right: 10px;
     margin-left: 20px;
     cursor: pointer;
     z-index: 100000;
 }
 
+.logoprofil img {
+    width: 37px;
+}
+
 .header .search {
-    border-width: 2.3px;
+    margin-top: 1.3px;
+    border-width: 1.78px;
     border-style: solid;
-    border-color: #18181835;
-    width: 59.31%;
-    height: 50px;
+    border-color: #18181851;
+    width: 700px;
+    height: 34px;
     display: flex;
-    background-color: #FFFFFF;
-    padding: 1px 15px 5px 15px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 7px;
     animation: menuKeluar2 0.7s;
-    transition: 0.6s;
+    animation-delay: 1.5s;
+    transition: 0.5s;
 }
 
 body.dark-mode .header .search {
@@ -289,6 +291,8 @@ body.dark-mode .header .search {
 
 .header .search .searchicon {
     cursor: pointer;
+    margin-top: -7px;
+    padding: 0 0 0 12px;
     transition: 0.6s;
 }
 
@@ -299,22 +303,25 @@ body.dark-mode .header .search .searchicon {
 .header .srcinput input {
     outline: none;
     border: none;
+    padding-top: 7.5px;
+    position: absolute;
+    margin-left: 12px;
+    width: 630px;
+    font-size: 13.5px;
     background: none;
-    margin-left: 20px;
-    padding-right: 500px;
-    font-size: 18px;
 }
 
 body.dark-mode .header .srcinput input {
     color: #FFFFFF;
 }
 
-.logo{
+body .header .logo{
     width: 100px;
     float: left;
     margin-left: 0px 0px 0px 30px;
-    width: 200px;
-    height: 50px;
+    margin-top: -2px;
+    width: 145.27px;
+    height: 38.25px;
     background-color: white;
     z-index: 1;
     animation: KeluarSamping 0.9s;
@@ -326,15 +333,16 @@ body.dark-mode .logo {
 }
 
 .dropbtn {
-    border-left: 9.5px solid transparent;
-    border-right: 9.5px solid transparent;
-    border-top: 9.5px solid #CD985b;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #CD985b;
     margin-right: 30px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 13px;
+    margin-top: 13px;
     cursor: pointer;
     transform: rotate(-90deg);
     transition: 0.25s;
+    background: none;
 }
 
 .dropdown.activate .dropbtn{
@@ -434,19 +442,26 @@ body.dark-mode .dropdown-content p {
  }
 
 .banner {
-    position: absolute;
-    width: 1430px;
-    top: 20%;
-    left: 5.5%;
+    margin: 0 auto;
+    margin-top: 120px;
+    position: relative;
+    width: 90%;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 15px;
     z-index: 1;
     cursor: pointer;
 }
 .banner .slideshow-container {
-    width: 200%;
     display: flex;
-    animation: slide 15s infinite;
+    width: 200%;
+    height: 100%;
+    animation: slide 10s ease infinite;
+}
+
+.banner img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @keyframes slide {
@@ -483,10 +498,6 @@ body.dark-mode .dropdown-content p {
     100% {
         transform: translateX(0%);
     }
-}
-
-.banner .slideshow-container img {
-    width: 200%;
 }
 
 .btn-banner {

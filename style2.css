@@ -337,40 +337,92 @@ body.dark-mode .logo {
 }
 
 .dropbtn {
-    border-left: 7px solid transparent;
+    z-index: 5;
+    position: fixed;
+}
+
+.dropbtn .line1{
+    /* border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 7px solid #CD985b;
-    margin-right: 30px;
-    margin-left: 13px;
-    margin-top: 13px;
+    border-top: 7px solid #CD985b; */
+    width: 28px;
+    border: #CD985B;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 8px;
     cursor: pointer;
-    transform: rotate(-90deg);
     transition: 0.25s;
     background: none;
 }
 
-.dropdown.activate .dropbtn{
-    transform: rotate(0deg);
+.dropbtn .line2 {
+    width: 19px;
+    border: #CD985B;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: none;
 }
+
+/* .dropbtn .line3 {
+    width: 28px;
+    border: #CD985B;
+    border-width: 1px;
+    border-style: solid;
+    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+    transition: 0.25s;
+    background: none;
+} */
+
+.dropdown.activate .dropbtn .line1{
+    margin-top: 16px;
+    width: 20px;
+    transform: rotate(45deg);
+    background-color: #CD985B;
+}
+
+.dropdown.activate .dropbtn .line2{
+    margin-top: -2.1px;
+    background-color: #CD985B;
+    width: 20px;
+    transform: rotate(-45deg);
+}
+
+/* .dropdown.activate .dropbtn .line3{
+    margin-top: -2px;
+    opacity: 0;
+    background-color: #CD985B;
+    transform: rotate(45deg);
+} */
 
 .dropdown {
     position: relative;
     display: inline-block;
-    z-index: 4;
+    z-index: 5;
 }
 
 .dropdown-content {
+    border-radius: 7px;
+    margin: 90px 20px 0 20px;
     display: none;
-    height: 100%;
+    height: 270px;
     width: 195px;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     left: 0;
-    padding-top: 70px;
     background-color: #FFFFFF;
     position: fixed;
-    box-shadow: 1px 1px 15px -3px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 100px rgba(0, 0, 0, 0.2);
     transition: 0.65s;
     animation: menuKeluar 0.65s;
 }
@@ -382,13 +434,54 @@ body.dark-mode .dropdown-content {
 
 @keyframes menuKeluar {
     0% {
-        transform: translateY(-50%);
-        height: 60%;
+        /* transform: scale(0%); */
+        opacity: .5;
+        height: 100px;
     }
  
     100% {
+        /* transform: scale(100%); */
+        opacity: 1;
+        height: 270px;
+    }
+ }
+
+ @keyframes contentdrop {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100% {
         transform: translateY(0%);
-        height: 100%;
+        opacity: 1;
+    }
+ }
+ @keyframes contentdrop2 {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
     }
  }
 
@@ -402,6 +495,13 @@ body.dark-mode .dropdown-content {
     transition: 0.8s;
 }
 
+.dropdown-content .first {
+    animation: contentdrop 1s;
+}
+.dropdown-content .scnd {
+    animation: contentdrop2 1.3s;
+}
+
 body.dark-mode .dropdown-content a {
     color: white;
 }
@@ -411,9 +511,10 @@ body.dark-mode .dropdown-content p {
 }
 
 .dropdown-content p {
-    padding: 43px 50px 1px 21px;
+    padding: 24px 50px 1px 21px;
     padding-left: 30px;
     font-size: 9px;
+    transition: 0.5s;
 }
 
 .dropdown-content a:hover {
@@ -428,6 +529,7 @@ body.dark-mode .dropdown-content p {
 }
 
 .logoo{
+    margin-left: 50px;
     display: flex;
     transition: 0.65s;
     animation: KeluarSamping 0.65s;
@@ -447,21 +549,20 @@ body.dark-mode .dropdown-content p {
 
 .banner {
     margin: 0 auto;
-    margin-top: 120px;
+    margin-top: 100px;
     position: relative;
     width: 90%;
     overflow: hidden;
     border-radius: 15px;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; 
 }
 .banner .slideshow-container {
     display: flex;
     width: 200%;
     height: 100%;
-    animation: slide 10s ease infinite;
+    animation: slide 20s ease infinite;
 }
-
 .banner img {
     width: 50%;
     height: 100%;
@@ -472,32 +573,62 @@ body.dark-mode .dropdown-content p {
     0% {
         transform: translateX(0%);
     }
+    5% {
+        transform: translateX(0%);
+    }
     10% {
+        transform: translateX(0%);
+    }
+    15% {
         transform: translateX(0%);
     }
     20% {
         transform: translateX(-50%);
     }
+    25% {
+        transform: translateX(-50%);
+    }
     30% {
         transform: translateX(-50%);
     }
-    40% {
+    35% {
         transform: translateX(-50%);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
     }
     50% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
     }
     60% {
-        transform: translateX(0%);
+        transform: translateX(-150%);
+    }
+    65% {
+        transform: translateX(-150%);
     }
     70% {
-        transform: translateX(0%);
+        transform: translateX(-150%);
+    }
+    75% {
+        transform: translateX(-150%);
     }
     80% {
-        transform: translateX(0%);
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
     }
     90% {
-        transform: translateX(0%);
+        transform: translateX(-200%);
+    }
+    95% {
+        transform: translateX(-200%);
     }
     100% {
         transform: translateX(0%);

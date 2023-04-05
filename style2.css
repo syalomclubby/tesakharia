@@ -274,7 +274,6 @@ body.dark-mode .biomenu .title-bio div a:hover {
     display: flex;
     border-radius: 7px;
     animation: menuKeluar2 0.7s;
-    animation-delay: 1.5s;
     transition: 0.5s;
 }
 
@@ -328,7 +327,6 @@ body .header .logo{
     height: 38.25px;
     background-color: white;
     z-index: 1;
-    animation: KeluarSamping 0.9s;
     transition: 0.5s;
 }
 
@@ -345,7 +343,7 @@ body.dark-mode .logo {
     /* border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-top: 7px solid #CD985b; */
-    width: 28px;
+    width: 20px;
     border: #CD985B;
     border-width: 1px;
     border-style: solid;
@@ -358,7 +356,7 @@ body.dark-mode .logo {
 }
 
 .dropbtn .line2 {
-    width: 19px;
+    width: 20px;
     border: #CD985B;
     border-width: 1px;
     border-style: solid;
@@ -370,8 +368,8 @@ body.dark-mode .logo {
     background: none;
 }
 
-/* .dropbtn .line3 {
-    width: 28px;
+.dropbtn .line3 {
+    width: 20px;
     border: #CD985B;
     border-width: 1px;
     border-style: solid;
@@ -381,7 +379,7 @@ body.dark-mode .logo {
     cursor: pointer;
     transition: 0.25s;
     background: none;
-} */
+}
 
 .dropdown.activate .dropbtn .line1{
     margin-top: 16px;
@@ -397,12 +395,12 @@ body.dark-mode .logo {
     transform: rotate(-45deg);
 }
 
-/* .dropdown.activate .dropbtn .line3{
+.dropdown.activate .dropbtn .line3{
     margin-top: -2px;
     opacity: 0;
     background-color: #CD985B;
     transform: rotate(45deg);
-} */
+}
 
 .dropdown {
     position: relative;
@@ -529,10 +527,9 @@ body.dark-mode .dropdown-content p {
 }
 
 .logoo{
-    margin-left: 50px;
+    margin-left: 45px;
     display: flex;
     transition: 0.65s;
-    animation: KeluarSamping 0.65s;
 }
 
 @keyframes KeluarSamping {

@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+body .bingkai {
+    max-width: 1190px;
+    position: relative;
+    margin: 0 auto;
+}
+
 body.dark-mode::-webkit-scrollbar {
     width: 17px;
     background-color: #393939;
@@ -542,12 +548,12 @@ body.dark-mode .dropdown-content p {
  }
  @keyframes KeluarSamping3 {
     0% {
-        transform: scale(85%);
+        transform: scale(55%);
         opacity: 0;
     }
  
     100% {
-        transform: scale(100%);
+        transform: scale(85%);
         opacity: 1;
     }
  }
@@ -555,26 +561,29 @@ body.dark-mode .dropdown-content p {
 .shop {
     display: flex;
     flex-direction: row;
-    padding-top: 135px;
-    padding-left: 400px;
+    padding-top: 70px;
+    margin-left: 250px;
+    transform: scale(90%);
 }
 
 .shop .item img {
-    width: 70%;
+    width: 350px;
     animation: KeluarSamping2 0.7s;
 }
 
 .shop .item .banner {
-    height: 90px;
-    width: 420px;
-    border-radius: 10px;
+    height: 80px;
+    width: 350px;
+    border-radius: 8px;
     background: #DCDCDC;
-    margin-top: 20px;
+    margin-top: 15px;
     animation: KeluarSamping2 1.6s;
 }
 
 .shop .item-info {
-    margin-left: -130px;
+    transform: scale(85%);
+    margin-left: 0px;
+    margin-top: -40px;
     animation: KeluarSamping3 1.2s;
 }
 
@@ -616,7 +625,7 @@ body.dark-mode .dropdown-content p {
 }
 
 .shop .card h2 {
-    margin-right: -300px;
+    margin-right: -200px;
     padding-top: 7px;
 }
 
@@ -693,9 +702,9 @@ body.dark-mode .dropdown-content p {
     border-style: none;
     background-color: #CD985B;
     color: #FFEAD1;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
-    width: 192px;
+    width: 165px;
     height: 60px;
     border-radius: 10px;
     transition: 0.4s;
@@ -703,24 +712,17 @@ body.dark-mode .dropdown-content p {
 }
 
 .shop .card .btn-1:hover {
-    margin-right: 15px;
-    border-style: none;
     background-color: #FFEAD1;
     color: #CD985B;
-    font-size: 20px;
-    font-weight: 600;
-    width: 192px;
-    height: 60px;
-    border-radius: 10px;
 }
 
 .shop .card .btn-2 {
     border-style: none;
     background-color: #FFEAD1;
     color: #CD985B;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
-    width: 192px;
+    width: 165px;
     height: 60px;
     border-radius: 10px;
     transition: 0.4s;
@@ -728,14 +730,8 @@ body.dark-mode .dropdown-content p {
 }
 
 .shop .card .btn-2:hover {
-    border-style: none;
     background-color: #CD985B;
     color: #FFEAD1;
-    font-size: 20px;
-    font-weight: 600;
-    width: 192px;
-    height: 60px;
-    border-radius: 10px;
 }
 
 .shop .card .btn-3 {
@@ -745,9 +741,9 @@ body.dark-mode .dropdown-content p {
     border-color: #CD985B;
     border-width: 3px;
     color: #CD985B;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
-    width: 400px;
+    width: 350px;
     height: 60px;
     border-radius: 10px;
     transition: 0.4s;
@@ -755,19 +751,13 @@ body.dark-mode .dropdown-content p {
 }
 
 .shop .card .btn-3:hover {
-    margin-top: 15px;
-    border-style: none;
     background-color: #CD985B;
-    border-width: 3px;
     color: #FFEAD1;
-    font-size: 20px;
-    font-weight: 600;
-    width: 400px;
-    height: 60px;
-    border-radius: 10px;
 }
 
 .footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background-color: #CD985b;
     text-align: center;

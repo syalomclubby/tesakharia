@@ -590,6 +590,11 @@ body.dark-mode .dropdown-content p {
 .shop .item-info h2 {
     font-size: 30px;
     padding-right: 320px;
+    transition: 0.4s;
+}
+
+body.dark-mode .shop .item-info h2 {
+    color: #fff;
 }
 
 .shop .item-info .sub {
@@ -598,17 +603,32 @@ body.dark-mode .dropdown-content p {
     color: #747474;
     font-size: 20px;
     margin: 10px 0;
-    font-weight: 600;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
 .terjual {
     color: #747474;
     opacity: 60%;
+    transition: 0.5s;
+}
+
+body.dark-mode .shop .item-info .sub {
+    color: #C0C0C0;
+}
+
+body.dark-mode .terjual {
+    color: #C0C0C0;
 }
 
 .shop .item-info .price {
     font-size: 38px;
     font-weight: 700;
+    transition: 0.5s;
+}
+
+body.dark-mode .shop .item-info .price {
+    color: #fff;
 }
 
 .shop .card {
@@ -617,7 +637,7 @@ body.dark-mode .dropdown-content p {
     border-color: #74747492;
     border-width: 3.5px;
     border-radius: 10px;
-    width: 450px;
+    width: 400px;
     height: 340px;
     padding-left: 25px;
     padding-top: 8px;
@@ -625,8 +645,13 @@ body.dark-mode .dropdown-content p {
 }
 
 .shop .card h2 {
-    margin-right: -200px;
+    margin-right: -250px;
     padding-top: 7px;
+    transition: 0.5s;
+}
+
+body.dark-mode .shop .card h2 {
+    color: #fff;
 }
 
 .shop .card .number {
@@ -681,6 +706,11 @@ body.dark-mode .dropdown-content p {
     border-style: none;
     outline: none;
     background-color: #ffffff00;
+    transition: 0.6s;
+}
+
+body.dark-mode .shop .card .number input {
+    color: #fff;
 }
 
 .shop .card .terjual {

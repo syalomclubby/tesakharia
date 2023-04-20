@@ -36,6 +36,9 @@ body.dark-mode::-webkit-scrollbar-button:single-button {
     width: 10px;
 }
 
+body {
+    transition: 0.3s;
+}
 body.dark-mode {
     background: #2B2A29;
 }
@@ -716,15 +719,26 @@ body.dark-mode .shop .card .number input {
 .shop .card .terjual {
     display: flex;
     opacity: 100%;
-    color: #74747492;
+    color: #747474;
     justify-content: space-between;
     margin: 20px 20px 20px 0;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
+    transition: 0.4s;
+}
+
+body.dark-mode .shop .card .terjual {
+    color: #C0C0C0;
 }
 
 .shop .card .terjual .harga {
     color: #000000;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+body.dark-mode .shop .card .terjual .harga {
+    color: #FFFFFF;
 }
 
 .shop .card .btn-1 {
